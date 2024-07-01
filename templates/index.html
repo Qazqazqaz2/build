@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Simple Carousel</title>
+</head>
+<body>
+  <section class="carousel">
+    <input type="radio" name="position"/>
+    <input type="radio" name="position" checked/>
+    <input type="radio" name="position" />
+    <main id="carousel">
+      <div class="item">
+        <h2 class="text-white">
+          КАПИТАЛЬНЫЙ РЕМОНТ
+        </h2>
+      </div>
+      <div class="item" style="flex-direction: column;">
+        <h1 class="text-white">
+          УСЛУГИ РЕМОНТА
+          <br>
+        </h1>
+        <h4 class="text-info">ВСЕ ВИДЫ</h4>
+      </div>
+      <div class="item">
+        <h2 class="text-white">
+          КОСМЕТИЧЕСКИЙ РЕМОНТ
+        </h2>
+      </div>
+      </main>
+  </section>
+  <section class="about">
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <img class="mainImg" src="https://otzz.ru/wp-content/uploads/2023/12/linii-perspektivy-2.webp">
+        <div class="allText aboveText">
+          <p class="text-blk subHeadingText">
+            Ремонт квартир – быстро и качественно
+          </p>
+          <p class="text-blk description">
+            Основной вид деятельности нашей компании — ремонт квартиры в Красноярске. Занимаясь ремонтом квартиры и ставя перед собой задачу, что итог должен быть обязательно качественным результатом. На сайте в разделе Наши Работы вы можете посмотреть фотографии ремонтов, которые мы выполняли ранее.
+          </p>
+          <button class="explore">
+            Explore
+          </button>
+        </div>
+      </div>
+      <div class="responsive-container-block Container bottomContainer">
+        <img class="mainImg" src="https://cdn.culture.ru/images/9cac92df-140f-57a5-acbb-5da2dfb7a035">
+        <div class="allText bottomText">
+          <p class="text-blk subHeadingText">
+            Заказать недорого ремонт квартиры в Красноярске
+          </p>
+          <p class="text-blk description">
+            Мы понимаем, что не у всех красноярцев есть возможность заказать дорогостоящий ремонт своей квартиры. А если еще и квартира находится в ипотеке, так на ремонт может затянуться на очень долгое время.
+          </p>
+          <p class="text-blk description">
+            Именно поэтому мы предлагаем вам провести недорогой, но одновременно и качественный ремонт квартиры в Красноярске под ключ. Всю стоимость предстоящего проведенного ремонта вы узнаете заранее и по его окончанию сумма останется неизменной.
+          </p>
+          <button class="explore">
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="items">
+    <div class="wrapper">
+	<h1 class="d-flex justify-content-center fw-bold">Услуги ремонта квартир</h1>
+	<ul>
+		<li class="litems">
+			<img src="https://design.pibig.info/uploads/posts/2023-03/1679660635_design-pibig-info-p-dizain-kvartiri-s-panoramnimi-oknami-dizai-13.jpg" class="img" alt="Arooj Aftab album cover" />
+			<span>Ремонт квартиры</span>
+		</li>
+		<li class="litems">
+			<img src="https://camremont.ru/wp-content/uploads/2023/03/1617013385_21-p-interer-ofisa-v-sovremennom-stile-22.jpg" class="img" alt="Arooj Aftab album cover" />
+			<span>Ремонт офиса</span>
+		</li>
+		<li class="litems">
+			<img src="https://klike.net/uploads/posts/2023-03/1679457994_3-107.jpg" class="img" alt="Arooj Aftab album cover" />
+			<span>Ремонт коттеджа</span>
+		</li>
+		<li class="litems">
+			<img src="https://stroy-podskazka.ru/images/article/orig/2018/02/shpaklevka-vidy-i-tonkosti-naneseniya.jpg" class="img" alt="Arooj Aftab album cover" />
+			<span>Отделочные работы</span>
+		</li>
+    </ul>
+    </div>
+  </section>
+  <footer class="py-3 my-4">
+      <h4>Контакты:</h4>
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="https://t.me/BitcoinTeleTON" class="nav-link px-2">Telegram</a></li>
+      <li class="nav-item"><p id="phone-number" class="nav-link px-2" style="cursor: pointer;" onclick="copyPhoneNumber()">
+        +7 (983) 292-40-29
+    </p></li>
+    </ul>
+    <p class="text-center">© 2024 Company, Криптосфера</p>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="{{ url_for('static',filename='js/carousel.js')}}"></script>
+<script src="{{ url_for('static',filename='js/phone.js')}}"></script>
+</body>
+</html>
